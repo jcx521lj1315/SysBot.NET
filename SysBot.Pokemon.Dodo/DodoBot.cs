@@ -50,7 +50,7 @@ namespace SysBot.Pokemon.Dodo
         {
             var channelId = Settings.ChannelId;
             if (string.IsNullOrWhiteSpace(channelId)) return;
-            SendChannelMessage("开始派送", channelId);
+            SendChannelMessage("欢迎使用间辞机器人", channelId);
             Task.Delay(1_000).ConfigureAwait(false);
             if (typeof(T) == typeof(PK8))
             {
